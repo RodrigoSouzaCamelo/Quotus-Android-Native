@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "br.com.rodrigo.quotus"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "br.com.rodrigo.quotus"
@@ -40,6 +40,8 @@ android {
 }
 
 dependencies {
+    implementation(libs.navigation.compose)
+    implementation(libs.kotlin.serialization)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
